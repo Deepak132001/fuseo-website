@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Fuseo</title>
+    <meta name="description" content="Fuseo Terms of Service - Rules and guidelines for using our professional networking platform.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #007AFF;
+            --primary-dark: #0051D5;
+            --primary-light: #4DA3FF;
+            --dark: #0A0E27;
+            --dark-secondary: #1A1F3A;
+            --text: #E8ECF4;
+            --text-secondary: #A8B2D1;
+            --accent: #00D9FF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.8;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(232, 236, 244, 0.1);
+        }
+        
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #007AFF 0%, #00D9FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        
+        .back-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-light);
+        }
+        
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 5% 4rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgba(0, 122, 255, 0.2);
+        }
+        
+        .page-header h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #007AFF 0%, #00D9FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .content h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+        }
+        
+        .content h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        
+        .content ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content li {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+        
+        .content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        .content a {
+            color: var(--primary-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .content a:hover {
+            border-bottom-color: var(--primary-light);
+        }
+        
+        .toc {
+            background: var(--dark-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(232, 236, 244, 0.1);
+        }
+        
+        .toc h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .toc a:hover {
+            color: var(--primary-light);
+        }
+        
+        footer {
+            margin-top: 6rem;
+            padding: 3rem 5%;
+            border-top: 1px solid rgba(232, 236, 244, 0.1);
+            background: var(--dark-secondary);
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 999;
+            border: none;
+            font-size: 1.5rem;
+        }
+        
+        .scroll-top.visible {
+            opacity: 1;
+        }
+        
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">FUSEO</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+    
+    <div class="legal-container">
+        <div class="page-header">
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last Updated: December 19, 2024</p>
+        </div>
+        
+        <div class="toc">
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#agreement">Agreement to Terms</a></li>
+                <li><a href="#eligibility">1. Eligibility</a></li>
+                <li><a href="#account">2. Account Registration and Security</a></li>
+                <li><a href="#conduct">3. User Conduct and Content</a></li>
+                <li><a href="#matching">4. Matching and Swipe Mechanics</a></li>
+                <li><a href="#messaging">5. Messaging and Communication</a></li>
+                <li><a href="#suspension">11. Account Suspension and Termination</a></li>
+                <li><a href="#contact-terms">18. Contact Information</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+<p># Terms of Service for Fuseo</p>
+
+<strong>Last Updated: December 19, 2024</strong>
+
+<h2 id="agreement">Agreement to Terms</h2>
+
+<p>Welcome to Fuseo! These Terms of Service ("Terms") govern your access to and use of the Fuseo mobile application ("App"), website, and related services (collectively, the "Service"). The Service is operated by Fuseo ("we," "us," or "our").</p>
+
+<p>By creating an account, accessing, or using Fuseo, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you may not use the Service.</p>
+
+<strong>IMPORTANT:</strong> These Terms contain an arbitration clause and class action waiver that affect your legal rights. Please read Section 16 carefully.
+
+<h2 id="eligibility">1. Eligibility</h2>
+
+<h3>1.1 Age Requirement</h3>
+
+<p>You must be at least 18 years old to use Fuseo. By using the Service, you represent and warrant that:</p>
+<ul>
+<li>You are at least 18 years of age</li>
+<li>You have the legal capacity to enter into these Terms</li>
+<li>You are not prohibited from using the Service under applicable law</li>
+</ul>
+
+<h3>1.2 Account Authenticity</h3>
+
+<p>You agree to:</p>
+<ul>
+<li>Provide accurate, current, and complete information during registration</li>
+<li>Maintain and update your information to keep it accurate and current</li>
+<li>Use your real name and genuine information</li>
+<li>Create only one account per person</li>
+<li>Not impersonate any person or entity</li>
+</ul>
+
+<h3>1.3 Prohibited Users</h3>
+
+<p>You may not use Fuseo if you:</p>
+<ul>
+<li>Have been previously banned or suspended from the Service</li>
+<li>Are a convicted sex offender</li>
+<li>Are prohibited by law from using the Service</li>
+<li>Reside in a country subject to a U.S. government embargo or designated as a "terrorist supporting" country</li>
+</ul>
+
+<h2 id="account">2. Account Registration and Security</h2>
+
+<h3>2.1 Account Creation</h3>
+
+<p>To use Fuseo, you must:</p>
+<ul>
+<li>Register with a valid email address</li>
+<li>Create a secure password</li>
+<li>Complete your profile with required information</li>
+<li>Select at least one category (Startup, Trading, Personal Development, or Influencer)</li>
+<li>Provide location information for matching purposes</li>
+<li>Upload at least one profile photo</li>
+</ul>
+
+<h3>2.2 Account Security</h3>
+
+<p>You are responsible for:</p>
+<ul>
+<li>Maintaining the confidentiality of your password</li>
+<li>All activities that occur under your account</li>
+<li>Notifying us immediately of any unauthorized access or security breach</li>
+<li>Taking reasonable steps to prevent unauthorized use</li>
+</ul>
+
+<strong>We are not liable for any loss or damage arising from your failure to protect your account credentials.</strong>
+
+<h3>2.3 Account Termination by You</h3>
+
+<p>You may delete your account at any time by:</p>
+<ul>
+<li>Contacting us at [YOUR SUPPORT EMAIL] with an account deletion request</li>
+<li>Your data will be deleted in accordance with our Privacy Policy</li>
+</ul>
+
+<h2 id="conduct">3. User Conduct and Content</h2>
+
+<h3>3.1 Acceptable Use</h3>
+
+<p>Fuseo is a professional networking platform. You agree to use the Service only for lawful purposes and in accordance with these Terms.</p>
+
+<strong>You agree NOT to:</strong>
+
+<strong>Prohibited Behavior:</strong>
+<ul>
+<li>Harass, abuse, threaten, or intimidate other users</li>
+<li>Use the Service for dating or romantic purposes</li>
+<li>Send spam, unsolicited messages, or commercial content</li>
+<li>Impersonate others or create fake accounts</li>
+<li>Stalk, follow, or harass users outside the platform</li>
+<li>Share contact information for the purpose of harassment</li>
+<li>Engage in any form of discrimination based on race, ethnicity, religion, gender, sexual orientation, disability, or other protected characteristics</li>
+</ul>
+
+<strong>Prohibited Content:</strong>
+<ul>
+<li>Post sexually explicit, pornographic, or nudity content</li>
+<li>Share content depicting minors in any context</li>
+<li>Upload violent, graphic, or disturbing content</li>
+<li>Post hate speech or content promoting violence</li>
+<li>Share false, misleading, or fraudulent information</li>
+<li>Violate intellectual property rights (copyrights, trademarks)</li>
+<li>Share malicious code, viruses, or malware</li>
+<li>Post content that violates any applicable law</li>
+</ul>
+
+<strong>Prohibited Technical Activities:</strong>
+<ul>
+<li>Reverse engineer, decompile, or disassemble the App</li>
+<li>Use bots, scrapers, or automated tools</li>
+<li>Attempt to gain unauthorized access to systems</li>
+<li>Interfere with or disrupt the Service</li>
+<li>Bypass security measures or rate limits</li>
+<li>Extract user data through automated means</li>
+<li>Create derivative works based on the Service</li>
+</ul>
+
+<strong>Prohibited Commercial Activities:</strong>
+<ul>
+<li>Use the Service for multi-level marketing, pyramid schemes, or similar ventures</li>
+<li>Solicit money from other users</li>
+<li>Promote or sell products/services without permission</li>
+<li>Use the platform for fundraising without authorization</li>
+<li>Recruit users for external platforms or services</li>
+</ul>
+
+<h3>3.2 Professional Networking Purpose</h3>
+
+<p>Fuseo is designed for professional collaboration, not dating or romantic relationships. You agree to:</p>
+<ul>
+<li>Use the Service to find business partners, collaborators, mentors, or accountability partners</li>
+<li>Engage in professional, respectful communication</li>
+<li>Focus on collaboration goals within your selected category</li>
+<li>Report users who misuse the platform for dating purposes</li>
+</ul>
+
+<h3>3.3 User Content</h3>
+
+<strong>Your Content:</strong>
+<ul>
+<li>You retain ownership of content you post (photos, messages, profile information)</li>
+<li>By posting content, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, distribute, and display your content to provide and improve the Service</li>
+</ul>
+
+<strong>Content Standards:</strong>
+<ul>
+<li>Profile photos must clearly show your face</li>
+<li>Photos must not contain nudity, violence, or offensive material</li>
+<li>Bios and descriptions must be truthful and professional</li>
+<li>Chat messages must be respectful and on-topic</li>
+</ul>
+
+<strong>Content Removal:</strong>
+<ul>
+<li>We reserve the right to remove any content that violates these Terms</li>
+<li>We may remove content without prior notice</li>
+<li>Repeated violations may result in account suspension or termination</li>
+</ul>
+
+<h3>3.4 Category-Specific Guidelines</h3>
+
+<strong>Startup Category:</strong>
+<ul>
+<li>Provide honest information about your project stage and skills</li>
+<li>Do not misrepresent your experience or capabilities</li>
+<li>Respect intellectual property when discussing ideas</li>
+</ul>
+
+<strong>Trading Category:</strong>
+<ul>
+<li>Do not provide financial advice unless properly licensed</li>
+<li>Share strategies for educational purposes only</li>
+<li>Do not guarantee returns or promote "get rich quick" schemes</li>
+<li>Comply with financial regulations in your jurisdiction</li>
+</ul>
+
+<strong>Personal Development Category:</strong>
+<ul>
+<li>Do not provide medical, mental health, or therapeutic advice unless licensed</li>
+<li>Share experiences and support, not professional services</li>
+<li>Encourage users to seek professional help when appropriate</li>
+</ul>
+
+<strong>Influencer Category:</strong>
+<ul>
+<li>Do not misrepresent follower counts or engagement metrics</li>
+<li>Disclose sponsored content or partnerships</li>
+<li>Respect platform guidelines when discussing collaborations</li>
+</ul>
+
+<h2 id="matching">4. Matching and Swipe Mechanics</h2>
+
+<h3>4.1 How Matching Works</h3>
+
+<ul>
+<li>You can swipe left (pass), right (like), or superlike on potential matches</li>
+<li>A match occurs when two users mutually like each other</li>
+<li>Our algorithm shows you users based on category preferences, location, and compatibility</li>
+<li>Distance filtering ranges from 10km to Worldwide</li>
+</ul>
+
+<h3>4.2 No Guarantee of Matches</h3>
+
+<ul>
+<li>We do not guarantee you will receive matches</li>
+<li>Matching depends on other users' preferences and activity</li>
+<li>We do not control how other users interact with your profile</li>
+<li>Match quality depends on accurate profile information</li>
+</ul>
+
+<h3>4.3 Unmatching</h3>
+
+<ul>
+<li>Either user can unmatch at any time</li>
+<li>Unmatching removes the chat and connection</li>
+<li>We do not mediate disputes between unmatched users</li>
+</ul>
+
+<h2 id="messaging">5. Messaging and Communication</h2>
+
+<h3>5.1 Chat Features</h3>
+
+<ul>
+<li>Matched users can send text messages and photos</li>
+<li>Users can create group chats for team collaboration</li>
+<li>We provide icebreaker questions to start conversations</li>
+<li>Push notifications alert you to new messages and matches</li>
+</ul>
+
+<h3>5.2 Communication Standards</h3>
+
+<ul>
+<li>Keep conversations professional and respectful</li>
+<li>Do not share personal contact information prematurely</li>
+<li>Report inappropriate messages immediately</li>
+<li>Do not use chat for spam, harassment, or solicitation</li>
+</ul>
+
+<h3>5.3 Message Retention</h3>
+
+<ul>
+<li>Messages are stored while both users maintain active accounts</li>
+<li>Deleted accounts result in message removal</li>
+<li>We may retain messages for legal compliance or safety purposes</li>
+<li>You cannot recover deleted messages</li>
+</ul>
+
+<h3>5.4 Photo Sharing in Chat</h3>
+
+<ul>
+<li>You may share photos through the chat feature</li>
+<li>Shared photos must comply with content standards</li>
+<li>Do not share explicit, offensive, or inappropriate images</li>
+<li>Recipients may save or screenshot shared photos (outside our control)</li>
+</ul>
+
+<h2>6. Location Services</h2>
+
+<h3>6.1 Location Data</h3>
+
+<ul>
+<li>Fuseo uses your location to show nearby matches</li>
+<li>You can set your preferred distance range (10km to Worldwide)</li>
+<li>Location accuracy affects match quality</li>
+<li>You can control location permissions through device settings</li>
+</ul>
+
+<h3>6.2 Location Privacy</h3>
+
+<ul>
+<li>Your exact location is not shared with other users</li>
+<li>Users see approximate distance only (e.g., "5 km away")</li>
+<li>Disabling location limits matching functionality</li>
+</ul>
+
+<h2>7. Subscription and Payments</h2>
+
+<h3>7.1 Free Service</h3>
+
+<ul>
+<li>Fuseo is currently free to use</li>
+<li>We reserve the right to introduce paid features or subscriptions in the future</li>
+</ul>
+
+<h3>7.2 Future Paid Features</h3>
+
+<p>If we introduce paid features:</p>
+<ul>
+<li>We will provide clear pricing information</li>
+<li>Payment terms will be specified before purchase</li>
+<li>Refunds will be subject to our refund policy at that time</li>
+<li>Subscriptions may auto-renew unless cancelled</li>
+</ul>
+
+<h2>8. Intellectual Property Rights</h2>
+
+<h3>8.1 Our Intellectual Property</h3>
+
+<p>The Service and its content (excluding user-generated content) are owned by Fuseo and protected by copyright, trademark, and other intellectual property laws.</p>
+
+<strong>We own:</strong>
+<ul>
+<li>The Fuseo name, logo, and branding</li>
+<li>The app design, layout, and user interface</li>
+<li>The matching algorithm and app functionality</li>
+<li>All software, code, and technical infrastructure</li>
+<li>Original content created by Fuseo</li>
+</ul>
+
+<strong>You may not:</strong>
+<ul>
+<li>Copy, modify, or create derivative works</li>
+<li>Use our trademarks without permission</li>
+<li>Reverse engineer the app</li>
+<li>Extract or replicate our algorithms</li>
+</ul>
+
+<h3>8.2 Limited License to You</h3>
+
+<p>We grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
+<ul>
+<li>Download and use the App on your personal device</li>
+<li>Access and use the Service for personal, non-commercial purposes</li>
+<li>Subject to compliance with these Terms</li>
+</ul>
+
+<h3>8.3 Feedback and Suggestions</h3>
+
+<p>If you provide feedback, suggestions, or ideas about the Service:</p>
+<ul>
+<li>We may use them without compensation or obligation to you</li>
+<li>You grant us all rights to implement and use your feedback</li>
+<li>We are not obligated to implement any suggestions</li>
+</ul>
+
+<h2>9. Third-Party Services</h2>
+
+<h3>9.1 Third-Party Integration</h3>
+
+<p>Fuseo integrates with third-party services:</p>
+<ul>
+<li><strong>Cloudinary</strong> - Image storage and delivery</li>
+<li><strong>Firebase/FCM</strong> - Push notifications</li>
+<li><strong>Expo</strong> - App infrastructure</li>
+<li><strong>Supabase</strong> - Database hosting</li>
+<li><strong>Nominatim</strong> - Geocoding services</li>
+</ul>
+
+<h3>9.2 Third-Party Terms</h3>
+
+<p>Your use of third-party services is subject to their respective terms and privacy policies. We are not responsible for third-party services or their practices.</p>
+
+<h3>9.3 External Links</h3>
+
+<p>The App may contain links to third-party websites or resources. We do not endorse and are not responsible for:</p>
+<ul>
+<li>Content on external sites</li>
+<li>Privacy practices of third parties</li>
+<li>Accuracy or availability of external resources</li>
+</ul>
+
+<h2>10. Reporting and Safety</h2>
+
+<h3>10.1 Report Violations</h3>
+
+<p>If you encounter violations of these Terms, please report them:</p>
+<ul>
+<li>Use the in-app report feature</li>
+<li>Contact us at [YOUR SUPPORT EMAIL]</li>
+<li>Provide details of the violation</li>
+</ul>
+
+<h3>10.2 Our Response</h3>
+
+<p>When we receive reports:</p>
+<ul>
+<li>We will investigate reported violations</li>
+<li>We may take action including warnings, content removal, or account suspension</li>
+<li>We may contact law enforcement if necessary</li>
+<li>We are not obligated to take action on every report</li>
+</ul>
+
+<h3>10.3 False Reports</h3>
+
+<ul>
+<li>Do not file false or malicious reports</li>
+<li>Abuse of the reporting system may result in your account suspension</li>
+</ul>
+
+<h2 id="suspension">11. Account Suspension and Termination</h2>
+
+<h3>11.1 Suspension by Us</h3>
+
+<p>We may suspend or terminate your account at any time, with or without notice, for:</p>
+<ul>
+<li>Violation of these Terms</li>
+<li>Fraudulent or illegal activity</li>
+<li>Harassment or abusive behavior</li>
+<li>Multiple user reports</li>
+<li>Risk to other users or the Service</li>
+<li>Any other reason at our sole discretion</li>
+</ul>
+
+<h3>11.2 Effects of Termination</h3>
+
+<p>Upon termination:</p>
+<ul>
+<li>You lose access to your account and matches</li>
+<li>Your profile and content will be removed</li>
+<li>You may not create a new account without permission</li>
+<li>Some data may be retained for legal compliance</li>
+</ul>
+
+<h3>11.3 Appealing Suspension</h3>
+
+<p>If your account is suspended, you may appeal by contacting [YOUR SUPPORT EMAIL] with:</p>
+<ul>
+<li>Your registered email address</li>
+<li>Reason for appeal</li>
+<li>Any relevant information</li>
+</ul>
+
+<p>We will review appeals but are not obligated to reinstate accounts.</p>
+
+<h2>12. Disclaimers and Limitations of Liability</h2>
+
+<h3>12.1 Service "As Is"</h3>
+
+<p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+<ul>
+<li>Warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+<li>Warranties regarding accuracy, reliability, or quality</li>
+<li>Warranties that the Service will be uninterrupted or error-free</li>
+<li>Warranties regarding security or data loss prevention</li>
+</ul>
+
+<h3>12.2 No Screening of Users</h3>
+
+<ul>
+<li>We do not conduct background checks on users</li>
+<li>We do not verify the accuracy of user-provided information</li>
+<li>We are not responsible for users' conduct or misrepresentations</li>
+<li>You are responsible for your own safety and due diligence</li>
+</ul>
+
+<h3>12.3 User Interactions</h3>
+
+<ul>
+<li>Interactions with other users are solely between you and them</li>
+<li>We are not responsible for disputes, agreements, or relationships formed through the Service</li>
+<li>We do not mediate conflicts between users</li>
+<li>You assume all risks when meeting or communicating with other users</li>
+</ul>
+
+<h3>12.4 Professional Advice Disclaimer</h3>
+
+<ul>
+<li>Fuseo does not provide professional advice (legal, financial, medical, etc.)</li>
+<li>Content shared by users is for informational purposes only</li>
+<li>Seek professional advice for important decisions</li>
+<li>We are not liable for advice exchanged between users</li>
+</ul>
+
+<h3>12.5 Third-Party Content</h3>
+
+<ul>
+<li>We are not responsible for content posted by other users</li>
+<li>User-generated content does not reflect our views or opinions</li>
+<li>We do not endorse user-posted information or recommendations</li>
+</ul>
+
+<h3>12.6 Limitation of Liability</h3>
+
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, FUSEO, ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, AND LICENSORS SHALL NOT BE LIABLE FOR:</p>
+
+<strong>Indirect Damages:</strong>
+<ul>
+<li>Indirect, incidental, special, consequential, or punitive damages</li>
+<li>Lost profits, revenue, data, or business opportunities</li>
+<li>Loss of goodwill or reputation</li>
+<li>Cost of substitute services</li>
+</ul>
+
+<strong>Direct Damages:</strong>
+<ul>
+<li>Our total liability shall not exceed €100 EUR (or equivalent in your currency) for any claim arising from your use of the Service</li>
+</ul>
+
+<strong>Exclusions:</strong>
+<p>This limitation applies even if we have been advised of the possibility of such damages and regardless of the legal theory (contract, tort, negligence, strict liability, or otherwise).</p>
+
+<h3>12.7 Exceptions to Limitations</h3>
+
+<p>Some jurisdictions do not allow certain warranty disclaimers or liability limitations. In such jurisdictions, the above limitations may not apply to you to the extent prohibited by law.</p>
+
+<h2>13. Indemnification</h2>
+
+<p>You agree to indemnify, defend, and hold harmless Fuseo, its affiliates, officers, directors, employees, agents, and licensors from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from or relating to:</p>
+
+<ul>
+<li>Your use or misuse of the Service</li>
+<li>Your violation of these Terms</li>
+<li>Your violation of any rights of another user or third party</li>
+<li>Your violation of any applicable laws or regulations</li>
+<li>Content you post or share through the Service</li>
+<li>Your interactions with other users</li>
+<li>Any false or misleading information you provide</li>
+</ul>
+
+<h2>14. Privacy and Data Protection</h2>
+
+<p>Your use of the Service is subject to our Privacy Policy, which is incorporated into these Terms by reference. By using Fuseo, you consent to our collection, use, and sharing of your information as described in the Privacy Policy.</p>
+
+<strong>Key Points:</strong>
+<ul>
+<li>We collect location data, photos, messages, and usage information</li>
+<li>We use third-party services (Cloudinary, Firebase, Supabase)</li>
+<li>European users have GDPR rights (access, deletion, portability)</li>
+<li>You can delete your account and data at any time</li>
+</ul>
+
+<p>Please review our Privacy Policy at [PRIVACY POLICY URL] for complete details.</p>
+
+<h2>15. Modifications to Terms and Service</h2>
+
+<h3>15.1 Changes to Terms</h3>
+
+<p>We reserve the right to modify these Terms at any time. When we make changes:</p>
+<ul>
+<li>We will update the "Last Updated" date</li>
+<li>For material changes, we will provide notice (in-app notification or email)</li>
+<li>Your continued use after changes constitutes acceptance</li>
+<li>If you do not agree with changes, stop using the Service and delete your account</li>
+</ul>
+
+<h3>15.2 Changes to Service</h3>
+
+<p>We may modify, suspend, or discontinue any aspect of the Service at any time, including:</p>
+<ul>
+<li>Features and functionality</li>
+<li>Availability in certain regions</li>
+<li>Integration with third-party services</li>
+<li>Technical requirements</li>
+</ul>
+
+<p>We are not liable for any modification, suspension, or discontinuation of the Service.</p>
+
+<h2>16. Dispute Resolution and Arbitration</h2>
+
+<h3>16.1 Governing Law</h3>
+
+<p>These Terms are governed by the laws of Italy, without regard to conflict of law principles. For users outside Italy, local mandatory consumer protection laws may also apply.</p>
+
+<h3>16.2 Informal Resolution</h3>
+
+<p>Before filing a claim, you agree to contact us at [YOUR SUPPORT EMAIL] to attempt informal resolution. We will attempt to resolve disputes within 60 days.</p>
+
+<h3>16.3 Binding Arbitration</h3>
+
+<strong>PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS.</strong>
+
+<p>If informal resolution fails, any dispute arising from these Terms or the Service shall be resolved through binding arbitration, except for:</p>
+<ul>
+<li>Small claims court matters (if they qualify)</li>
+<li>Intellectual property disputes</li>
+<li>Injunctive relief for Terms violations</li>
+</ul>
+
+<strong>Arbitration Rules:</strong>
+<ul>
+<li>Arbitration will be conducted under the rules of the Italian Arbitration Association or a mutually agreed arbitrator</li>
+<li>Arbitration will be held in Brescia, Italy, or another mutually agreed location</li>
+<li>Each party bears its own costs unless the arbitrator awards fees</li>
+<li>The arbitrator's decision is final and binding</li>
+</ul>
+
+<h3>16.4 Class Action Waiver</h3>
+
+<strong>YOU AGREE TO BRING CLAIMS ONLY IN YOUR INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY CLASS, COLLECTIVE, OR REPRESENTATIVE ACTION.</strong>
+
+<p>You and Fuseo agree that:</p>
+<ul>
+<li>There will be no class arbitrations or class actions</li>
+<li>Claims cannot be brought on behalf of other users</li>
+<li>Multiple users cannot consolidate claims</li>
+</ul>
+
+<p>If the class action waiver is found unenforceable, the arbitration provision shall be void, and disputes will be resolved in court.</p>
+
+<h3>16.5 Exceptions to Arbitration</h3>
+
+<p>You may opt out of arbitration by sending written notice to [YOUR SUPPORT EMAIL] within 30 days of account creation, stating your name, email, and intention to opt out.</p>
+
+<h3>16.6 Jurisdiction and Venue</h3>
+
+<p>If arbitration does not apply, you agree that:</p>
+<ul>
+<li>Disputes will be resolved in the courts of Brescia, Italy</li>
+<li>You consent to personal jurisdiction in these courts</li>
+<li>You waive any objection to venue in these courts</li>
+</ul>
+
+<h2>17. General Provisions</h2>
+
+<h3>17.1 Entire Agreement</h3>
+
+<p>These Terms, together with the Privacy Policy, constitute the entire agreement between you and Fuseo regarding the Service and supersede all prior agreements or understandings.</p>
+
+<h3>17.2 Severability</h3>
+
+<p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect. The invalid provision will be modified to the minimum extent necessary to make it enforceable.</p>
+
+<h3>17.3 Waiver</h3>
+
+<p>Our failure to enforce any provision of these Terms does not constitute a waiver of that provision or any other provision. No waiver shall be effective unless in writing.</p>
+
+<h3>17.4 Assignment</h3>
+
+<p>You may not assign or transfer these Terms or your account without our written consent. We may assign these Terms to any affiliate, subsidiary, or successor without your consent.</p>
+
+<h3>17.5 Force Majeure</h3>
+
+<p>We are not liable for any failure or delay in performance due to circumstances beyond our reasonable control, including:</p>
+<ul>
+<li>Natural disasters</li>
+<li>War, terrorism, or civil unrest</li>
+<li>Government actions or regulations</li>
+<li>Internet or telecommunications failures</li>
+<li>Third-party service outages</li>
+</ul>
+
+<h3>17.6 No Agency</h3>
+
+<p>These Terms do not create any agency, partnership, joint venture, or employment relationship between you and Fuseo. You have no authority to bind Fuseo or make representations on our behalf.</p>
+
+<h3>17.7 Survival</h3>
+
+<p>Provisions that by their nature should survive termination will survive, including:</p>
+<ul>
+<li>Intellectual property rights</li>
+<li>Disclaimers and limitations of liability</li>
+<li>Indemnification</li>
+<li>Dispute resolution</li>
+<li>General provisions</li>
+</ul>
+
+<h3>17.8 Language</h3>
+
+<p>These Terms are provided in English. Translations may be provided for convenience, but the English version governs in case of conflict.</p>
+
+<h2 id="contact-terms">18. Contact Information</h2>
+
+<p>For questions, concerns, or notices regarding these Terms, please contact us:</p>
+
+<strong>Email:</strong> [YOUR SUPPORT EMAIL]
+<strong>Response Time:</strong> We aim to respond within 48-72 hours
+
+<strong>For Legal Notices:</strong>
+<p>Please mark correspondence "LEGAL NOTICE" and include your full name, email address, and detailed description of the issue.</p>
+
+<strong>For Account Issues:</strong>
+<p>Include your registered email address and a description of the problem.</p>
+
+<p>---</p>
+
+<h2>Acknowledgment</h2>
+
+<p>By using Fuseo, you acknowledge that:</p>
+<ul>
+<li>You have read and understood these Terms</li>
+<li>You agree to be bound by these Terms</li>
+<li>You have reviewed our Privacy Policy</li>
+<li>You are at least 18 years of age</li>
+<li>You will use the Service in accordance with these Terms</li>
+</ul>
+
+<strong>Thank you for being part of the Fuseo professional networking community!</strong>
+
+<p>---</p>
+
+<h2>Summary of Key Points</h2>
+
+<p>✅ <strong>Eligibility:</strong> Must be 18+ with valid information</p>
+<p>✅ <strong>Purpose:</strong> Professional networking, not dating</p>
+<p>✅ <strong>Conduct:</strong> Be respectful, honest, and professional</p>
+<p>✅ <strong>Content:</strong> No inappropriate, illegal, or harmful content</p>
+<p>✅ <strong>Safety:</strong> Report violations; we may suspend accounts</p>
+<p>✅ <strong>Privacy:</strong> See our Privacy Policy for data practices</p>
+<p>✅ <strong>Liability:</strong> Service provided "as is" with limited liability</p>
+<p>✅ <strong>Disputes:</strong> Governed by Italian law; arbitration required</p>
+<p>✅ <strong>Changes:</strong> We may modify Terms with notice</p>
+
+<strong>Questions?</strong> Contact us at [YOUR SUPPORT EMAIL]
+
+<p>---</p>
+
+<strong>Fuseo - Connect With Doers, Not Dates</strong>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Fuseo. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="support.html">Support</a>
+        </p>
+    </footer>
+    
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

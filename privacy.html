@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Fuseo</title>
+    <meta name="description" content="Fuseo Privacy Policy - How we collect, use, and protect your personal information.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #007AFF;
+            --primary-dark: #0051D5;
+            --primary-light: #4DA3FF;
+            --dark: #0A0E27;
+            --dark-secondary: #1A1F3A;
+            --text: #E8ECF4;
+            --text-secondary: #A8B2D1;
+            --accent: #00D9FF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.8;
+        }
+        
+        /* Navigation - same as homepage */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(232, 236, 244, 0.1);
+        }
+        
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #007AFF 0%, #00D9FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        
+        .back-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-light);
+        }
+        
+        /* Content Container */
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 5% 4rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgba(0, 122, 255, 0.2);
+        }
+        
+        .page-header h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #007AFF 0%, #00D9FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        /* Content Styling */
+        .content h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+        }
+        
+        .content h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        
+        .content ul, .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content li {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+        
+        .content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        .content a {
+            color: var(--primary-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .content a:hover {
+            border-bottom-color: var(--primary-light);
+        }
+        
+        /* Highlight boxes */
+        .highlight-box {
+            background: var(--dark-secondary);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 6rem;
+            padding: 3rem 5%;
+            border-top: 1px solid rgba(232, 236, 244, 0.1);
+            background: var(--dark-secondary);
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background: var(--dark-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(232, 236, 244, 0.1);
+        }
+        
+        .toc h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .toc a:hover {
+            color: var(--primary-light);
+        }
+        
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 999;
+            border: none;
+            font-size: 1.5rem;
+        }
+        
+        .scroll-top.visible {
+            opacity: 1;
+        }
+        
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">FUSEO</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="legal-container">
+        <div class="page-header">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: December 19, 2024</p>
+        </div>
+        
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#information-collect">1. Information We Collect</a></li>
+                <li><a href="#how-we-use">2. How We Use Your Information</a></li>
+                <li><a href="#how-we-share">3. How We Share Your Information</a></li>
+                <li><a href="#your-rights">4. Your Rights and Choices</a></li>
+                <li><a href="#data-retention">5. Data Retention</a></li>
+                <li><a href="#data-security">6. Data Security</a></li>
+                <li><a href="#contact">11. Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+<p># Privacy Policy for Fuseo</p>
+
+<strong>Last Updated: December 19, 2024</strong>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Welcome to Fuseo ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use the Fuseo mobile application (the "App"). Fuseo is a professional networking platform that connects users based on collaboration goals across four categories: Startup, Trading, Personal Development, and Influencer.</p>
+
+<p>By using Fuseo, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with our policies and practices, please do not use the App.</p>
+
+<h2 id="information-collect">1. Information We Collect</h2>
+
+<h3>1.1 Information You Provide Directly</h3>
+
+<strong>Account Information:</strong>
+<ul>
+<li>Email address</li>
+<li>Password (encrypted and securely stored)</li>
+<li>Full name</li>
+<li>Date of birth</li>
+<li>Gender</li>
+<li>Bio/description</li>
+<li>Profile photos (up to 6 photos)</li>
+</ul>
+
+<strong>Category-Specific Information:</strong>
+
+<p>Depending on your selected category, you may provide:</p>
+
+<strong>Startup Category:</strong>
+<ul>
+<li>Role (idea owner or builder)</li>
+<li>Skills you need/have</li>
+<li>Project stage</li>
+<li>Time commitment</li>
+<li>Industry focus</li>
+</ul>
+
+<strong>Trading Category:</strong>
+<ul>
+<li>Trading styles and strategies</li>
+<li>Experience level</li>
+<li>Risk tolerance</li>
+<li>Trading platforms used</li>
+<li>Available hours</li>
+<li>Timezone preferences</li>
+</ul>
+
+<strong>Personal Development Category:</strong>
+<ul>
+<li>Development subcategory (physique, mental, spiritual)</li>
+<li>Current goals</li>
+<li>Experience level</li>
+<li>Preferred approach/style</li>
+<li>Availability</li>
+</ul>
+
+<strong>Influencer Category:</strong>
+<ul>
+<li>Type (wannabe, established, or growing)</li>
+<li>Social media platforms</li>
+<li>Niche/content category</li>
+<li>Follower counts</li>
+<li>Collaboration goals</li>
+</ul>
+
+<strong>Communication Data:</strong>
+<ul>
+<li>Messages you send through the App</li>
+<li>Photos you share in chats</li>
+<li>Group chat participation</li>
+<li>Icebreaker responses</li>
+</ul>
+
+<h3>1.2 Information Collected Automatically</h3>
+
+<strong>Location Information:</strong>
+<ul>
+<li>Precise geographic location (latitude and longitude) when you grant location permissions</li>
+<li>We use your location to show you potential matches within your preferred distance range</li>
+<li>Location data is used for matching purposes only and is not shared publicly</li>
+</ul>
+
+<strong>Device Information:</strong>
+<ul>
+<li>Device type and model</li>
+<li>Operating system version</li>
+<li>Unique device identifiers</li>
+<li>Mobile network information</li>
+<li>Push notification tokens (for sending notifications)</li>
+</ul>
+
+<strong>Usage Information:</strong>
+<ul>
+<li>Swipe history (left, right, superlike)</li>
+<li>Matches made</li>
+<li>Messages sent and received</li>
+<li>App features used</li>
+<li>Login dates and times</li>
+<li>In-app activity patterns</li>
+</ul>
+
+<strong>Technical Information:</strong>
+<ul>
+<li>IP address</li>
+<li>Browser type (for web access)</li>
+<li>Connection information</li>
+<li>Error logs and crash reports</li>
+</ul>
+
+<h3>1.3 Information from Third-Party Services</h3>
+
+<p>We integrate with the following third-party services that may collect information:</p>
+
+<strong>Cloudinary:</strong>
+<ul>
+<li>Stores and processes your profile photos and chat images</li>
+<li>Images are stored securely on Cloudinary's cloud infrastructure</li>
+</ul>
+
+<strong>Firebase Cloud Messaging (FCM):</strong>
+<ul>
+<li>Manages push notifications</li>
+<li>Collects device tokens for notification delivery</li>
+</ul>
+
+<strong>Expo Push Notification Service:</strong>
+<ul>
+<li>Facilitates push notification delivery</li>
+<li>Processes notification delivery receipts</li>
+</ul>
+
+<strong>Nominatim/OpenStreetMap:</strong>
+<ul>
+<li>Provides geocoding and reverse geocoding services</li>
+<li>Processes location data for address lookup</li>
+</ul>
+
+<h2 id="how-we-use">2. How We Use Your Information</h2>
+
+<p>We use the collected information for the following purposes:</p>
+
+<h3>2.1 Core App Functionality</h3>
+<ul>
+<li>Create and manage your account</li>
+<li>Enable profile creation and customization</li>
+<li>Facilitate the matching algorithm based on category-specific criteria</li>
+<li>Calculate compatibility scores between users</li>
+<li>Filter potential matches by location and distance preferences</li>
+<li>Enable swiping functionality (like, pass, superlike)</li>
+<li>Facilitate matches between compatible users</li>
+<li>Enable real-time chat messaging (text and photos)</li>
+<li>Create and manage group chats</li>
+<li>Deliver icebreaker questions to start conversations</li>
+</ul>
+
+<h3>2.2 Communication</h3>
+<ul>
+<li>Send you push notifications about new matches</li>
+<li>Notify you of new messages</li>
+<li>Alert you to important account updates</li>
+<li>Send you icebreaker question suggestions</li>
+<li>Provide customer support responses</li>
+</ul>
+
+<h3>2.3 Safety and Security</h3>
+<ul>
+<li>Verify your identity and prevent fraud</li>
+<li>Detect and prevent spam, abuse, and other harmful activities</li>
+<li>Enforce our Terms of Service</li>
+<li>Protect against unauthorized access</li>
+<li>Monitor for security threats</li>
+<li>Investigate and respond to user reports</li>
+</ul>
+
+<h3>2.4 Improvement and Analytics</h3>
+<ul>
+<li>Analyze app usage patterns to improve features</li>
+<li>Understand user preferences and behavior</li>
+<li>Test new features and functionality</li>
+<li>Fix bugs and technical issues</li>
+<li>Optimize matching algorithms</li>
+<li>Enhance user experience</li>
+</ul>
+
+<h3>2.5 Legal Compliance</h3>
+<ul>
+<li>Comply with applicable laws and regulations</li>
+<li>Respond to legal requests and court orders</li>
+<li>Protect our legal rights and interests</li>
+<li>Enforce our agreements</li>
+</ul>
+
+<h2 id="how-we-share">3. How We Share Your Information</h2>
+
+<h3>3.1 With Other Users</h3>
+
+<strong>Visible to Matched Users:</strong>
+<ul>
+<li>Profile photos</li>
+<li>Name</li>
+<li>Age</li>
+<li>Bio/description</li>
+<li>Category-specific information relevant to matching</li>
+<li>Approximate distance from other users</li>
+<li>Messages and photos shared in chats</li>
+</ul>
+
+<strong>Not Shared with Other Users:</strong>
+<ul>
+<li>Email address</li>
+<li>Password</li>
+<li>Exact location coordinates</li>
+<li>Swipe history</li>
+<li>Push notification tokens</li>
+<li>Device information</li>
+</ul>
+
+<h3>3.2 With Service Providers</h3>
+
+<p>We share information with third-party service providers who help us operate the App:</p>
+
+<strong>Supabase (Database Hosting):</strong>
+<ul>
+<li>Stores all user data, messages, and matches</li>
+<li>Subject to their privacy policy: https://supabase.com/privacy</li>
+</ul>
+
+<strong>Cloudinary (Image Storage):</strong>
+<ul>
+<li>Stores and delivers profile photos and chat images</li>
+<li>Subject to their privacy policy: https://cloudinary.com/privacy</li>
+</ul>
+
+<strong>Render (Backend Hosting):</strong>
+<ul>
+<li>Hosts our backend servers and API</li>
+<li>Subject to their privacy policy: https://render.com/privacy</li>
+</ul>
+
+<strong>Firebase/Google Cloud (Push Notifications):</strong>
+<ul>
+<li>Delivers push notifications to your device</li>
+<li>Subject to their privacy policy: https://policies.google.com/privacy</li>
+</ul>
+
+<strong>Expo (App Infrastructure):</strong>
+<ul>
+<li>Provides app development and notification services</li>
+<li>Subject to their privacy policy: https://expo.dev/privacy</li>
+</ul>
+
+<h3>3.3 For Legal Reasons</h3>
+
+<p>We may disclose your information if required by law or if we believe in good faith that such disclosure is necessary to:</p>
+<ul>
+<li>Comply with legal obligations, court orders, or government requests</li>
+<li>Enforce our Terms of Service</li>
+<li>Protect the rights, property, or safety of Fuseo, our users, or the public</li>
+<li>Detect, prevent, or address fraud, security, or technical issues</li>
+<li>Respond to claims of illegal activity or violations of third-party rights</li>
+</ul>
+
+<h3>3.4 Business Transfers</h3>
+
+<p>If Fuseo is involved in a merger, acquisition, bankruptcy, dissolution, reorganization, or sale of assets, your information may be transferred as part of that transaction. We will notify you of any such change and inform you of choices you may have regarding your information.</p>
+
+<h3>3.5 With Your Consent</h3>
+
+<p>We may share your information for other purposes with your explicit consent.</p>
+
+<h2 id="your-rights">4. Your Rights and Choices</h2>
+
+<h3>4.1 European Users (GDPR Rights)</h3>
+
+<p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have the following rights under GDPR:</p>
+
+<strong>Right to Access:</strong>
+<ul>
+<li>Request a copy of the personal information we hold about you</li>
+</ul>
+
+<strong>Right to Rectification:</strong>
+<ul>
+<li>Request correction of inaccurate or incomplete information</li>
+</ul>
+
+<strong>Right to Erasure ("Right to be Forgotten"):</strong>
+<ul>
+<li>Request deletion of your personal information</li>
+<li>Contact us at [YOUR SUPPORT EMAIL] to delete your account</li>
+</ul>
+
+<strong>Right to Restrict Processing:</strong>
+<ul>
+<li>Request that we limit how we use your information</li>
+</ul>
+
+<strong>Right to Data Portability:</strong>
+<ul>
+<li>Request your data in a structured, commonly used format</li>
+</ul>
+
+<strong>Right to Object:</strong>
+<ul>
+<li>Object to our processing of your personal information</li>
+</ul>
+
+<strong>Right to Withdraw Consent:</strong>
+<ul>
+<li>Withdraw consent at any time where we rely on consent to process your data</li>
+</ul>
+
+<strong>Right to Lodge a Complaint:</strong>
+<ul>
+<li>File a complaint with your local data protection authority</li>
+</ul>
+
+<p>To exercise any of these rights, contact us at [YOUR SUPPORT EMAIL].</p>
+
+<h3>4.2 All Users</h3>
+
+<strong>Account Settings:</strong>
+<ul>
+<li>Edit your profile information at any time through the App</li>
+<li>Change your category preferences</li>
+<li>Update your location and distance preferences</li>
+<li>Manage your photos (add, delete, set profile picture)</li>
+<li>Change your password</li>
+</ul>
+
+<strong>Location Permissions:</strong>
+<ul>
+<li>Control location access through your device settings</li>
+<li>Note: Disabling location access will limit matching functionality</li>
+</ul>
+
+<strong>Push Notifications:</strong>
+<ul>
+<li>Manage notification preferences through your device settings</li>
+<li>Disable notifications at any time (may affect user experience)</li>
+</ul>
+
+<strong>Chat and Communication:</strong>
+<ul>
+<li>Delete messages you've sent (only from your view)</li>
+<li>Leave group chats</li>
+<li>Block or report users</li>
+</ul>
+
+<strong>Account Deletion:</strong>
+<ul>
+<li>Request complete account deletion by contacting [YOUR SUPPORT EMAIL]</li>
+<li>Upon deletion, we will remove your profile, photos, messages, and matches</li>
+<li>Some data may be retained for legal compliance or legitimate business purposes</li>
+</ul>
+
+<h2 id="data-retention">5. Data Retention</h2>
+
+<p>We retain your personal information for as long as necessary to provide the App's services and fulfill the purposes outlined in this Privacy Policy.</p>
+
+<strong>Active Accounts:</strong>
+<ul>
+<li>Your data is retained while your account is active</li>
+</ul>
+
+<strong>Deleted Accounts:</strong>
+<ul>
+<li>After you delete your account, we will delete or anonymize your personal information within 30 days</li>
+<li>Some information may be retained in backup systems for up to 90 days</li>
+<li>We may retain certain information longer if required by law or for legitimate business purposes (e.g., fraud prevention, legal disputes)</li>
+</ul>
+
+<strong>Messages and Photos:</strong>
+<ul>
+<li>Chat messages are retained while both users maintain active accounts</li>
+<li>Photos uploaded to Cloudinary are deleted when you delete your account or remove specific photos</li>
+<li>Matched users may retain copies of messages in their chat history</li>
+</ul>
+
+<strong>Analytics Data:</strong>
+<ul>
+<li>Aggregated, anonymized usage data may be retained indefinitely for analytics purposes</li>
+</ul>
+
+<h2 id="data-security">6. Data Security</h2>
+
+<p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+<strong>Security Measures Include:</strong>
+<ul>
+<li>Encryption of data in transit using HTTPS/TLS</li>
+<li>Secure password storage using industry-standard hashing (bcrypt)</li>
+<li>JWT (JSON Web Token) authentication for API requests</li>
+<li>Secure database hosting with Supabase</li>
+<li>Regular security updates and patches</li>
+<li>Access controls limiting employee access to personal data</li>
+<li>Secure cloud storage with Cloudinary</li>
+<li>Regular security monitoring and threat detection</li>
+</ul>
+
+<strong>What We Cannot Guarantee:</strong>
+<ul>
+<li>No method of transmission over the internet or electronic storage is 100% secure</li>
+<li>While we strive to protect your information, we cannot guarantee absolute security</li>
+<li>You are responsible for maintaining the confidentiality of your account credentials</li>
+</ul>
+
+<h2>7. Children's Privacy</h2>
+
+<p>Fuseo is not intended for users under the age of 18. We do not knowingly collect personal information from children under 18.</p>
+
+<p>If you are a parent or guardian and believe your child under 18 has provided us with personal information, please contact us at [YOUR SUPPORT EMAIL]. We will take steps to delete such information from our systems.</p>
+
+<h2>8. International Data Transfers</h2>
+
+<p>Fuseo operates globally. Your information may be transferred to, stored, and processed in countries other than your country of residence, including Italy (where our developer is based) and the United States (where some of our service providers are located).</p>
+
+<strong>For European Users:</strong>
+<ul>
+<li>We ensure adequate safeguards are in place for international data transfers</li>
+<li>Service providers are required to comply with GDPR standards or have appropriate data transfer mechanisms (e.g., Standard Contractual Clauses)</li>
+<li>Your data may be transferred to countries with different data protection laws than the EEA</li>
+</ul>
+
+<p>By using Fuseo, you consent to the transfer of your information to countries outside your country of residence.</p>
+
+<h2>9. Third-Party Links and Services</h2>
+
+<p>The App may contain links to third-party websites, services, or content. This Privacy Policy does not apply to such third-party sites or services.</p>
+
+<strong>We are not responsible for:</strong>
+<ul>
+<li>Privacy practices of third-party websites</li>
+<li>Content on external sites</li>
+<li>Data collection by third-party services</li>
+</ul>
+
+<p>We encourage you to review the privacy policies of any third-party services you access through the App.</p>
+
+<h2>10. Changes to This Privacy Policy</h2>
+
+<p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.</p>
+
+<strong>When We Update:</strong>
+<ul>
+<li>We will post the updated Privacy Policy in the App</li>
+<li>We will update the "Last Updated" date at the top</li>
+<li>For material changes, we may provide additional notice (e.g., in-app notification, email)</li>
+</ul>
+
+<strong>Your Continued Use:</strong>
+<ul>
+<li>Continued use of the App after changes constitutes acceptance of the updated Privacy Policy</li>
+<li>If you do not agree with changes, please stop using the App and delete your account</li>
+</ul>
+
+<h2 id="contact">11. Contact Us</h2>
+
+<p>If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+
+<strong>Email:</strong> [YOUR SUPPORT EMAIL]
+<strong>Response Time:</strong> We aim to respond within 48-72 hours
+
+<strong>For GDPR-Related Requests:</strong>
+<p>Please include "GDPR Request" in your email subject line and specify which right you wish to exercise.</p>
+
+<strong>For Account Deletion:</strong>
+<p>Please include "Account Deletion Request" in your email subject line along with your registered email address.</p>
+
+<p>---</p>
+
+<h2>12. Additional Information for Specific Jurisdictions</h2>
+
+<h3>12.1 California Residents (CCPA)</h3>
+
+<p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+
+<strong>Right to Know:</strong>
+<ul>
+<li>Request information about the categories and specific pieces of personal information we collect</li>
+</ul>
+
+<strong>Right to Delete:</strong>
+<ul>
+<li>Request deletion of your personal information (with certain exceptions)</li>
+</ul>
+
+<strong>Right to Opt-Out:</strong>
+<ul>
+<li>We do not sell your personal information</li>
+</ul>
+
+<strong>Right to Non-Discrimination:</strong>
+<ul>
+<li>We will not discriminate against you for exercising your CCPA rights</li>
+</ul>
+
+<p>To exercise these rights, contact us at [YOUR SUPPORT EMAIL].</p>
+
+<h3>12.2 United Kingdom Residents</h3>
+
+<p>If you are in the UK, you have rights under the UK GDPR similar to those outlined in Section 4.1. The UK Information Commissioner's Office (ICO) is your supervisory authority for data protection matters.</p>
+
+<h3>12.3 Australian Residents</h3>
+
+<p>If you are in Australia, you have rights under the Privacy Act 1988. You may lodge a complaint with the Office of the Australian Information Commissioner (OAIC).</p>
+
+<p>---</p>
+
+<h2>13. Data Processing Lawful Basis (GDPR)</h2>
+
+<p>For European users, we process your personal information based on the following lawful bases:</p>
+
+<strong>Consent:</strong>
+<ul>
+<li>Location data collection and processing</li>
+<li>Push notification delivery</li>
+<li>Photo uploads and sharing</li>
+</ul>
+
+<strong>Contractual Necessity:</strong>
+<ul>
+<li>Account creation and management</li>
+<li>Providing matching and chat services</li>
+<li>Delivering core app functionality</li>
+</ul>
+
+<strong>Legitimate Interests:</strong>
+<ul>
+<li>Improving app features and user experience</li>
+<li>Preventing fraud and ensuring security</li>
+<li>Analytics and performance monitoring</li>
+<li>Customer support</li>
+</ul>
+
+<strong>Legal Obligation:</strong>
+<ul>
+<li>Compliance with applicable laws</li>
+<li>Responding to legal requests</li>
+</ul>
+
+<p>You may withdraw consent at any time by adjusting your device settings or contacting us.</p>
+
+<p>---</p>
+
+<h2>Summary</h2>
+
+<p>Fuseo is committed to protecting your privacy while providing a professional networking platform. We collect information necessary to facilitate meaningful connections, ensure security, and improve our services. You have control over your data and can exercise your rights at any time.</p>
+
+<p>For questions or to exercise your rights, contact us at [YOUR SUPPORT EMAIL].</p>
+
+<p>Thank you for trusting Fuseo with your professional networking journey! 🚀</p>
+
+<p>---</p>
+
+<strong>Fuseo - Connect With Doers, Not Dates</strong>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fuseo. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="support.html">Support</a>
+        </p>
+    </footer>
+    
+    <!-- Scroll to top button -->
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+    
+    <script>
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+        
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
