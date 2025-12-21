@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Safety Standards - Fuseo</title>
+    <meta name="description" content="Fuseo's child safety standards and policies for preventing child sexual abuse and exploitation.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #007AFF;
+            --primary-dark: #0051D5;
+            --primary-light: #4DA3FF;
+            --dark: #0A0E27;
+            --dark-secondary: #1A1F3A;
+            --text: #E8ECF4;
+            --text-secondary: #A8B2D1;
+            --accent: #00D9FF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.8;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(232, 236, 244, 0.1);
+        }
+        
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #007AFF 0%, #00D9FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        
+        .back-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-light);
+        }
+        
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 5% 4rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgba(0, 122, 255, 0.2);
+        }
+        
+        .page-header h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #007AFF 0%, #00D9FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .content h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+        }
+        
+        .content h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        
+        .content ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content li {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+        
+        .content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        .content a {
+            color: var(--primary-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .content a:hover {
+            border-bottom-color: var(--primary-light);
+        }
+        
+        .alert-box {
+            background: rgba(255, 107, 157, 0.1);
+            border-left: 4px solid #FF6B9D;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .alert-box p {
+            margin-bottom: 0;
+            color: var(--text);
+        }
+        
+        .info-box {
+            background: var(--dark-secondary);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .contact-box {
+            background: var(--dark-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid rgba(232, 236, 244, 0.1);
+        }
+        
+        .contact-box h3 {
+            margin-top: 0;
+        }
+        
+        footer {
+            margin-top: 6rem;
+            padding: 3rem 5%;
+            border-top: 1px solid rgba(232, 236, 244, 0.1);
+            background: var(--dark-secondary);
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">FUSEO</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+    
+    <div class="legal-container">
+        <div class="page-header">
+            <h1>Child Safety Standards</h1>
+            <p class="last-updated">Last Updated: December 20, 2024</p>
+        </div>
+        
+        <div class="content">
+            <h2>Our Commitment to Child Safety</h2>
+            
+            <p>Fuseo is a professional networking platform designed exclusively for adults aged 18 and over. We have zero tolerance for child sexual abuse and exploitation (CSAE) and child sexual abuse material (CSAM).</p>
+            
+            <p>We are committed to:</p>
+            <ul>
+                <li>Preventing minors from accessing our platform</li>
+                <li>Detecting and removing any child sexual abuse material (CSAM)</li>
+                <li>Reporting suspected child exploitation to appropriate authorities</li>
+                <li>Cooperating fully with law enforcement investigations</li>
+                <li>Continuously improving our safety measures and technologies</li>
+            </ul>
+            
+            <div class="alert-box">
+                <p><strong>Age Requirement:</strong> Fuseo is strictly for users 18 years of age and older. Anyone under 18 is prohibited from creating an account or using our services.</p>
+            </div>
+            
+            <h2>Child Sexual Abuse and Exploitation (CSAE) Prevention</h2>
+            
+            <h3>1. Age Verification</h3>
+            <p>We enforce our 18+ age requirement through:</p>
+            <ul>
+                <li>Mandatory date of birth declaration during registration</li>
+                <li>Account rejection for users under 18</li>
+                <li>Ongoing monitoring for potential underage users</li>
+                <li>Immediate account termination if underage use is detected</li>
+            </ul>
+            
+            <h3>2. Content Moderation</h3>
+            <p>We actively monitor and moderate content to prevent CSAM:</p>
+            <ul>
+                <li>Automated detection systems for inappropriate content</li>
+                <li>Human review of flagged content</li>
+                <li>Photo upload screening before acceptance</li>
+                <li>Chat message monitoring for suspicious activity</li>
+                <li>Immediate removal of prohibited content</li>
+            </ul>
+            
+            <h3>3. User Reporting System</h3>
+            <p>Users can report concerns directly within the app:</p>
+            <ul>
+                <li>In-app report button on all profiles and messages</li>
+                <li>Dedicated reporting category for child safety concerns</li>
+                <li>Anonymous reporting option available</li>
+                <li>24-48 hour response time for safety reports</li>
+                <li>Immediate escalation of CSAM reports to our safety team</li>
+            </ul>
+            
+            <h3>4. Technology and Detection</h3>
+            <p>We employ technology to detect and prevent abuse:</p>
+            <ul>
+                <li>Image hash matching against known CSAM databases</li>
+                <li>Pattern recognition for suspicious behavior</li>
+                <li>Regular security audits and updates</li>
+                <li>Encryption and secure data handling</li>
+            </ul>
+            
+            <h2>Reporting to Authorities</h2>
+            
+            <h3>National Center for Missing & Exploited Children (NCMEC)</h3>
+            <p>Fuseo is committed to reporting suspected CSAM to the National Center for Missing & Exploited Children (NCMEC) CyberTipline as required by law:</p>
+            <ul>
+                <li>Immediate reporting of apparent CSAM</li>
+                <li>Preservation of evidence for law enforcement</li>
+                <li>Full cooperation with NCMEC investigations</li>
+                <li>Compliance with 18 U.S.C. § 2258A reporting requirements</li>
+            </ul>
+            
+            <div class="info-box">
+                <p><strong>NCMEC CyberTipline:</strong> All suspected CSAM is reported to NCMEC at <a href="https://www.cybertipline.org" target="_blank" rel="noopener">www.cybertipline.org</a></p>
+            </div>
+            
+            <h3>Law Enforcement Cooperation</h3>
+            <p>We work closely with law enforcement:</p>
+            <ul>
+                <li>Response to legal requests within required timeframes</li>
+                <li>Preservation of account data for investigations</li>
+                <li>Cooperation with international authorities</li>
+                <li>Compliance with local, national, and international laws</li>
+            </ul>
+            
+            <h3>Regional and National Authorities</h3>
+            <p>In addition to NCMEC, we report to relevant authorities based on jurisdiction:</p>
+            <ul>
+                <li><strong>European Union:</strong> EUROPOL and national cybercrime units</li>
+                <li><strong>United Kingdom:</strong> National Crime Agency (NCA) and Internet Watch Foundation (IWF)</li>
+                <li><strong>Italy:</strong> Polizia Postale e delle Comunicazioni</li>
+                <li><strong>Other regions:</strong> Local law enforcement and child protection agencies</li>
+            </ul>
+            
+            <h2>User Safety Features</h2>
+            
+            <h3>In-App Reporting</h3>
+            <p>Users can report safety concerns directly:</p>
+            <ul>
+                <li><strong>Profile Reports:</strong> Report suspicious profiles or underage users</li>
+                <li><strong>Message Reports:</strong> Report inappropriate messages or content</li>
+                <li><strong>Photo Reports:</strong> Report concerning images</li>
+                <li><strong>Block Function:</strong> Immediately block and report problematic users</li>
+            </ul>
+            
+            <h3>Account Termination</h3>
+            <p>We permanently ban accounts that:</p>
+            <ul>
+                <li>Belong to users under 18</li>
+                <li>Share or solicit CSAM</li>
+                <li>Attempt to contact minors</li>
+                <li>Violate child safety policies</li>
+                <li>Engage in grooming behavior</li>
+            </ul>
+            
+            <h2>Privacy and Data Protection</h2>
+            
+            <p>While protecting children is our priority, we also respect user privacy:</p>
+            <ul>
+                <li>Reports are handled confidentially</li>
+                <li>Evidence preservation follows legal requirements</li>
+                <li>Data sharing limited to authorized authorities</li>
+                <li>GDPR and privacy law compliance</li>
+            </ul>
+            
+            <p>For more information, see our <a href="privacy.html">Privacy Policy</a>.</p>
+            
+            <h2>Education and Awareness</h2>
+            
+            <p>We educate our community about child safety:</p>
+            <ul>
+                <li>Clear community guidelines prohibiting illegal content</li>
+                <li>Age requirement notices throughout the app</li>
+                <li>Safety tips in our support documentation</li>
+                <li>Regular updates to safety policies</li>
+            </ul>
+            
+            <h2>Continuous Improvement</h2>
+            
+            <p>We continuously improve our safety measures:</p>
+            <ul>
+                <li>Regular safety audits and assessments</li>
+                <li>Technology updates to improve detection</li>
+                <li>Staff training on child safety protocols</li>
+                <li>Review of industry best practices</li>
+                <li>Collaboration with child safety organizations</li>
+            </ul>
+            
+            <h2>Contact for Child Safety Concerns</h2>
+            
+            <div class="contact-box">
+                <h3>Designated Safety Contact</h3>
+                <p><strong>Email:</strong> <a href="mailto:safety@fuseo.site">safety@fuseo.site</a></p>
+                <p><strong>Alternative Contact:</strong> <a href="mailto:support@fuseo.site">support@fuseo.site</a></p>
+                <p><strong>Response Time:</strong> Child safety reports are prioritized and reviewed within 24 hours</p>
+                
+                <p style="margin-top: 1.5rem;"><strong>For Emergencies:</strong></p>
+                <ul style="margin-left: 0; list-style: none;">
+                    <li>🚨 <strong>United States:</strong> Call 911 or report to NCMEC CyberTipline: 1-800-843-5678</li>
+                    <li>🚨 <strong>Italy:</strong> Contact Polizia Postale: 800 90 96 96</li>
+                    <li>🚨 <strong>EU:</strong> Contact local law enforcement or EUROPOL</li>
+                    <li>🚨 <strong>International:</strong> Contact your local emergency services</li>
+                </ul>
+            </div>
+            
+            <h2>Legal Compliance</h2>
+            
+            <p>Fuseo complies with all applicable laws regarding child safety, including:</p>
+            <ul>
+                <li><strong>18 U.S.C. § 2258A:</strong> CSAM reporting requirements (United States)</li>
+                <li><strong>GDPR:</strong> EU data protection regulations</li>
+                <li><strong>UK Online Safety Act:</strong> Child safety duties</li>
+                <li><strong>Italian Law:</strong> Child protection and cybercrime laws</li>
+                <li><strong>International conventions:</strong> UN Convention on the Rights of the Child</li>
+            </ul>
+            
+            <h2>Zero Tolerance Policy</h2>
+            
+            <div class="alert-box">
+                <p><strong>Important:</strong> Fuseo has absolutely zero tolerance for child sexual abuse and exploitation. Any user found to be sharing, soliciting, or engaging with CSAM will be:</p>
+                <ul style="margin-top: 1rem; margin-bottom: 0;">
+                    <li>Immediately and permanently banned from the platform</li>
+                    <li>Reported to NCMEC and appropriate law enforcement</li>
+                    <li>Subject to legal action and prosecution</li>
+                </ul>
+            </div>
+            
+            <h2>Updates to This Policy</h2>
+            
+            <p>We may update this Child Safety Standards page to reflect:</p>
+            <ul>
+                <li>Changes in law or regulations</li>
+                <li>Improvements to our safety measures</li>
+                <li>New technologies or detection methods</li>
+                <li>Feedback from authorities or safety organizations</li>
+            </ul>
+            
+            <p>Last updated: December 20, 2024</p>
+            
+            <h2>Additional Resources</h2>
+            
+            <p><strong>Report Child Sexual Abuse Material:</strong></p>
+            <ul>
+                <li><a href="https://www.cybertipline.org" target="_blank" rel="noopener">NCMEC CyberTipline (United States)</a></li>
+                <li><a href="https://www.iwf.org.uk" target="_blank" rel="noopener">Internet Watch Foundation (UK)</a></li>
+                <li><a href="https://www.inhope.org" target="_blank" rel="noopener">INHOPE (International)</a></li>
+                <li><a href="https://www.commissariatodips.it" target="_blank" rel="noopener">Polizia Postale (Italy)</a></li>
+            </ul>
+            
+            <p><strong>Child Safety Organizations:</strong></p>
+            <ul>
+                <li><a href="https://www.missingkids.org" target="_blank" rel="noopener">National Center for Missing & Exploited Children</a></li>
+                <li><a href="https://www.unicef.org/child-protection" target="_blank" rel="noopener">UNICEF Child Protection</a></li>
+                <li><a href="https://www.weprotect.org" target="_blank" rel="noopener">WeProtect Global Alliance</a></li>
+            </ul>
+            
+            <hr style="margin: 3rem 0; border: none; border-top: 1px solid rgba(232, 236, 244, 0.1);">
+            
+            <p style="text-align: center; color: var(--text-secondary); font-size: 0.95rem;">
+                For questions about this policy, contact: <a href="mailto:safety@fuseo.site">safety@fuseo.site</a><br>
+                For our Privacy Policy, visit: <a href="privacy.html">fuseo.site/privacy.html</a><br>
+                For our Terms of Service, visit: <a href="terms.html">fuseo.site/terms.html</a>
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Fuseo. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="support.html">Support</a>
+        </p>
+    </footer>
+</body>
+</html>
