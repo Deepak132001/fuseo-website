@@ -120,6 +120,11 @@
             box-shadow: 0 15px 40px rgba(0, 122, 255, 0.2);
         }
         
+        .support-card.safety {
+            border: 2px solid var(--primary);
+            background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+        }
+        
         .support-icon {
             font-size: 3rem;
             margin-bottom: 1.5rem;
@@ -183,6 +188,11 @@
             border-color: var(--primary);
         }
         
+        .faq-item.priority {
+            border: 2px solid var(--primary);
+            background: linear-gradient(135deg, rgba(0, 122, 255, 0.05) 0%, rgba(0, 217, 255, 0.05) 100%);
+        }
+        
         .faq-question {
             font-family: 'Syne', sans-serif;
             font-size: 1.2rem;
@@ -201,8 +211,17 @@
             transition: max-height 0.3s ease;
         }
         
+        .faq-answer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+        
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+        
         .faq-item.active .faq-answer {
-            max-height: 500px;
+            max-height: 1000px;
         }
         
         .faq-toggle {
@@ -319,11 +338,25 @@
         </div>
         
         <div class="support-grid">
+            <div class="support-card safety">
+                <span class="support-icon">🛡️</span>
+                <h3>Safety & Moderation</h3>
+                <p>Report inappropriate content or users. We review all reports within 24 hours and have zero tolerance for violations.</p>
+                <a href="#safety-faq">Safety Features →</a>
+            </div>
+            
             <div class="support-card">
                 <span class="support-icon">📧</span>
                 <h3>Email Support</h3>
                 <p>Send us an email and we'll get back to you within 48-72 hours.</p>
                 <a href="mailto:support@fuseo.site">support@fuseo.site</a>
+            </div>
+            
+            <div class="support-card">
+                <span class="support-icon">🗑️</span>
+                <h3>Account Deletion</h3>
+                <p>You can delete your account and all data at any time. Data is permanently removed within 30 days.</p>
+                <a href="#deletion-faq">Learn How →</a>
             </div>
             
             <div class="support-card">
@@ -339,11 +372,97 @@
                 <p>Questions about your account, privacy, or data? We're here to help.</p>
                 <a href="privacy.html">Privacy Policy</a>
             </div>
+            
+            <div class="support-card">
+                <span class="support-icon">📜</span>
+                <h3>Terms & Guidelines</h3>
+                <p>Review our Terms of Service and Community Guidelines.</p>
+                <a href="terms.html">Terms of Service</a>
+            </div>
         </div>
         
         <!-- FAQ Section -->
         <div class="faq-section">
             <h2>Frequently Asked Questions</h2>
+            
+            <!-- PRIORITY: Account Deletion FAQ -->
+            <div class="faq-item priority" onclick="toggleFAQ(this)" id="deletion-faq">
+                <div class="faq-question">
+                    🗑️ How do I delete my account?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>You can delete your account at any time.</strong> We provide two options:</p>
+                    <p><strong>Option 1: Email Request (Current)</strong><br>
+                    Send an email to <a href="mailto:support@fuseo.site">support@fuseo.site</a> with the subject line "Account Deletion Request" and include your registered email address. We'll process your request within 48 hours.</p>
+                    <p><strong>Option 2: In-App Deletion (Coming Soon)</strong><br>
+                    Navigate to Settings > Account > Delete Account and follow the prompts.</p>
+                    <p><strong>What gets deleted:</strong></p>
+                    <ul>
+                        <li>Your profile, photos, and personal information</li>
+                        <li>All messages and chat history</li>
+                        <li>Your matches and swipe history</li>
+                        <li>Location data and preferences</li>
+                    </ul>
+                    <p><strong>Timeline:</strong> Most data is deleted within 30 days. Some data may persist in backups for up to 90 days, then is automatically purged.</p>
+                    <p><strong>Note:</strong> Account deletion is permanent and cannot be undone. You cannot recover your account, matches, or messages after deletion.</p>
+                </div>
+            </div>
+            
+            <!-- PRIORITY: Safety Features FAQ -->
+            <div class="faq-item priority" onclick="toggleFAQ(this)" id="safety-faq">
+                <div class="faq-question">
+                    🛡️ How do I report or block inappropriate users?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Fuseo has zero tolerance for objectionable content and abusive behavior.</strong> We provide comprehensive safety tools:</p>
+                    <p><strong>Reporting Features:</strong></p>
+                    <ul>
+                        <li><strong>Report Profiles:</strong> Tap the menu icon on any profile and select "Report"</li>
+                        <li><strong>Report Messages:</strong> Long-press any message and select "Report"</li>
+                        <li><strong>Report in Chats:</strong> Use the chat menu to report users for violations</li>
+                    </ul>
+                    <p><strong>Blocking Features:</strong></p>
+                    <ul>
+                        <li>Block any user instantly from their profile or chat</li>
+                        <li>Blocked users cannot message you or see your profile</li>
+                        <li>All content from blocked users is removed from your feed</li>
+                        <li>When you block someone, our moderation team is automatically notified</li>
+                    </ul>
+                    <p><strong>Our Response:</strong></p>
+                    <ul>
+                        <li>All reports are reviewed <strong>within 24 hours</strong></li>
+                        <li>Urgent safety issues are reviewed immediately</li>
+                        <li>Violators are removed from the platform immediately</li>
+                        <li>Serious violations may be reported to law enforcement</li>
+                    </ul>
+                    <p>For urgent safety concerns, email <a href="mailto:support@fuseo.site">support@fuseo.site</a> with "Urgent Safety Issue" in the subject line.</p>
+                </div>
+            </div>
+            
+            <!-- PRIORITY: Content Moderation FAQ -->
+            <div class="faq-item priority" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    ⚠️ What content is not allowed on Fuseo?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Fuseo has ZERO TOLERANCE for objectionable content.</strong> The following is strictly prohibited:</p>
+                    <ul>
+                        <li><strong>Sexual Content:</strong> Nudity, pornography, sexually explicit material, or sexual harassment</li>
+                        <li><strong>Violence:</strong> Graphic violence, threats, or promotion of self-harm</li>
+                        <li><strong>Hate Speech:</strong> Content that attacks or discriminates based on race, ethnicity, religion, gender, sexual orientation, disability, or other protected characteristics</li>
+                        <li><strong>Harassment:</strong> Bullying, stalking, doxxing, or persistent unwanted contact</li>
+                        <li><strong>Illegal Content:</strong> Promotion of illegal activities, drug use, or criminal behavior</li>
+                        <li><strong>Child Exploitation:</strong> Any content depicting or promoting child exploitation or abuse</li>
+                        <li><strong>Spam and Fraud:</strong> Deceptive schemes, scams, or misleading information</li>
+                        <li><strong>Terrorism:</strong> Content promoting terrorism or violent extremism</li>
+                    </ul>
+                    <p><strong>Enforcement:</strong> Violations result in immediate content removal and may lead to account suspension or permanent ban. We report illegal content to law enforcement.</p>
+                    <p>Report violations using the in-app report feature or email <a href="mailto:support@fuseo.site">support@fuseo.site</a>.</p>
+                </div>
+            </div>
             
             <div class="faq-item" onclick="toggleFAQ(this)">
                 <div class="faq-question">
@@ -377,16 +496,6 @@
             
             <div class="faq-item" onclick="toggleFAQ(this)">
                 <div class="faq-question">
-                    How do I delete my account?
-                    <span class="faq-toggle">▼</span>
-                </div>
-                <div class="faq-answer">
-                    <p>To delete your account, email us at support@fuseo.site with "Account Deletion Request" in the subject line. Include your registered email address. We'll process your request within 48 hours and delete your data within 30 days as per our Privacy Policy.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item" onclick="toggleFAQ(this)">
-                <div class="faq-question">
                     Can I change my category after registration?
                     <span class="faq-toggle">▼</span>
                 </div>
@@ -401,17 +510,50 @@
                     <span class="faq-toggle">▼</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Your location is used only for matching purposes. Other users see an approximate distance (e.g., "5 km away"), not your exact coordinates. You can set your preferred matching distance from 10km to Worldwide. For more details, see our Privacy Policy.</p>
+                    <p>Your location is used only for matching purposes. Other users see an approximate distance (e.g., "5 km away"), not your exact coordinates. You can set your preferred matching distance from 10km to Worldwide. For more details, see our <a href="privacy.html">Privacy Policy</a>.</p>
                 </div>
             </div>
             
             <div class="faq-item" onclick="toggleFAQ(this)">
                 <div class="faq-question">
-                    What should I do if I encounter inappropriate behavior?
+                    What happens to my data when I delete my account?
                     <span class="faq-toggle">▼</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Use the in-app report feature to report any violations of our Terms of Service. You can also block users directly. We take all reports seriously and will investigate each case. For urgent safety concerns, contact us immediately at support@fuseo.site.</p>
+                    <p>When you delete your account, all your personal data is permanently removed from our servers within 30 days. This includes your profile, photos, messages, matches, location data, and account information. Some data may remain in backup systems for up to 90 days before being automatically purged. For complete details, see our <a href="privacy.html">Privacy Policy</a>.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How do I update my profile or photos?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Navigate to Settings > Edit Profile in the app. You can update your bio, photos, category preferences, and personal information at any time. Changes are saved immediately and reflected to other users.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What should I do if I encounter a technical issue?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>For technical issues, please email <a href="mailto:support@fuseo.site">support@fuseo.site</a> with details about the problem, including your device type, operating system, and steps to reproduce the issue. We typically respond within 48-72 hours.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How can I contact Fuseo support?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>General Support:</strong> <a href="mailto:support@fuseo.site">support@fuseo.site</a><br>
+                    <strong>Privacy Inquiries:</strong> <a href="mailto:privacy@fuseo.site">privacy@fuseo.site</a><br>
+                    <strong>Legal Matters:</strong> <a href="mailto:legal@fuseo.site">legal@fuseo.site</a></p>
+                    <p>We aim to respond to all inquiries within 48-72 hours. For urgent safety issues, mark your email "Urgent Safety Issue" for faster response (1-2 hours).</p>
                 </div>
             </div>
         </div>
@@ -434,10 +576,11 @@
                     <label for="category">Category</label>
                     <select id="category" name="category">
                         <option value="">Select a topic</option>
+                        <option value="account-deletion">Account Deletion</option>
+                        <option value="safety">Safety/Report User</option>
                         <option value="technical">Technical Issue</option>
                         <option value="account">Account Question</option>
                         <option value="privacy">Privacy Concern</option>
-                        <option value="report">Report User/Content</option>
                         <option value="feedback">Feedback/Suggestion</option>
                         <option value="other">Other</option>
                     </select>
